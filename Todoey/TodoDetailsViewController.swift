@@ -23,7 +23,8 @@ class TodoDetailsViewController: UIViewController {
         stackView.frame = CGRect(x: 0, y: self.navigationItem.titleView?.layer.frame.size.height ?? 0 + (self.navigationItem.titleView?.layer.frame.origin.y ?? 0), width: self.view.frame.width, height: self.view.frame.height + 900.0)
         subtitleLabel.frame = CGRect(x: stackView.frame.origin.x, y: stackView.frame.origin.y, width: self.view.frame.width, height: 300)
 
-        //subtitleLabel.backgroundColor = .blue
+        subtitleLabel.backgroundColor = .orange
+        subtitleLabel.textColor = .white
         subtitleLabel.layer.opacity = 0.5
         stackView.addSubview(subtitleLabel)
         

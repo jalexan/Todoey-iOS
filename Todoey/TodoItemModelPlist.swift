@@ -1,5 +1,5 @@
 //
-//  TodoItemModel.swift
+//  TodoItemModelPlist.swift
 //  Todoey
 //
 //  Created by Julie Alexan on 4/27/24.
@@ -8,7 +8,7 @@
 
 import Foundation
 
-class TodoItemModel : Encodable, Decodable {
+class TodoItemModelPlist : Encodable, Decodable {
     var item: String = ""
     var isDone: Bool = false
     

@@ -7,9 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		150EB929308D1CA800910D6D /* CategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 150EB928308D1CA800910D6D /* CategoryViewController.swift */; };
+		150EB92C308D54DE00910D6D /* SwipeCellKit in Frameworks */ = {isa = PBXBuildFile; productRef = 150EB92B308D54DE00910D6D /* SwipeCellKit */; };
 		15674A3E308A092000144530 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1526761E3089D91A009EB2E4 /* SceneDelegate.swift */; };
+		158B4424308B58D70057DE43 /* DataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 158B4422308B58D70057DE43 /* DataModel.xcdatamodeld */; };
 		15DF0ACA2BDC613000432846 /* TodoDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15DF0AC92BDC613000432846 /* TodoDetailsViewController.swift */; };
-		15DF0ACC2BDD9DE000432846 /* TodoItemModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15DF0ACB2BDD9DE000432846 /* TodoItemModel.swift */; };
+		15DF0ACC2BDD9DE000432846 /* TodoItemModelPlist.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15DF0ACB2BDD9DE000432846 /* TodoItemModelPlist.swift */; };
 		EB2BE4FA239524DB00FB933B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB2BE4F9239524DB00FB933B /* AppDelegate.swift */; };
 		EB2BE4FE239524DB00FB933B /* TodoListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB2BE4FD239524DB00FB933B /* TodoListViewController.swift */; };
 		EB2BE501239524DB00FB933B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB2BE4FF239524DB00FB933B /* Main.storyboard */; };
@@ -18,9 +21,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		150EB928308D1CA800910D6D /* CategoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryViewController.swift; sourceTree = "<group>"; };
 		1526761E3089D91A009EB2E4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		158B4423308B58D70057DE43 /* DataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DataModel.xcdatamodel; sourceTree = "<group>"; };
 		15DF0AC92BDC613000432846 /* TodoDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoDetailsViewController.swift; sourceTree = "<group>"; };
-		15DF0ACB2BDD9DE000432846 /* TodoItemModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoItemModel.swift; sourceTree = "<group>"; };
+		15DF0ACB2BDD9DE000432846 /* TodoItemModelPlist.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoItemModelPlist.swift; sourceTree = "<group>"; };
 		EB2BE4F6239524DB00FB933B /* Todoey.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Todoey.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB2BE4F9239524DB00FB933B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EB2BE4FD239524DB00FB933B /* TodoListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoListViewController.swift; sourceTree = "<group>"; };
@@ -35,6 +40,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				150EB92C308D54DE00910D6D /* SwipeCellKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,10 +67,12 @@
 			isa = PBXGroup;
 			children = (
 				EB2BE4F9239524DB00FB933B /* AppDelegate.swift */,
+				158B4422308B58D70057DE43 /* DataModel.xcdatamodeld */,
 				EB2BE4FD239524DB00FB933B /* TodoListViewController.swift */,
 				15DF0AC92BDC613000432846 /* TodoDetailsViewController.swift */,
-				15DF0ACB2BDD9DE000432846 /* TodoItemModel.swift */,
+				15DF0ACB2BDD9DE000432846 /* TodoItemModelPlist.swift */,
 				EB2BE4FF239524DB00FB933B /* Main.storyboard */,
+				150EB928308D1CA800910D6D /* CategoryViewController.swift */,
 				1526761E3089D91A009EB2E4 /* SceneDelegate.swift */,
 				EB2BE502239524DC00FB933B /* Assets.xcassets */,
 				EB2BE504239524DC00FB933B /* LaunchScreen.storyboard */,
@@ -89,6 +97,9 @@
 			dependencies = (
 			);
 			name = Todoey;
+			packageProductDependencies = (
+				150EB92B308D54DE00910D6D /* SwipeCellKit */,
+			);
 			productName = Todoey;
 			productReference = EB2BE4F6239524DB00FB933B /* Todoey.app */;
 			productType = "com.apple.product-type.application";
@@ -118,6 +129,9 @@
 				Base,
 			);
 			mainGroup = EB2BE4ED239524DB00FB933B;
+			packageReferences = (
+				150EB92A308D54DE00910D6D /* XCRemoteSwiftPackageReference "SwipeCellKit" */,
+			);
 			productRefGroup = EB2BE4F7239524DB00FB933B /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -146,8 +160,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				15674A3E308A092000144530 /* SceneDelegate.swift in Sources */,
-				15DF0ACC2BDD9DE000432846 /* TodoItemModel.swift in Sources */,
+				15DF0ACC2BDD9DE000432846 /* TodoItemModelPlist.swift in Sources */,
+				150EB929308D1CA800910D6D /* CategoryViewController.swift in Sources */,
 				EB2BE4FE239524DB00FB933B /* TodoListViewController.swift in Sources */,
+				158B4424308B58D70057DE43 /* DataModel.xcdatamodeld in Sources */,
 				15DF0ACA2BDC613000432846 /* TodoDetailsViewController.swift in Sources */,
 				EB2BE4FA239524DB00FB933B /* AppDelegate.swift in Sources */,
 			);
@@ -304,13 +320,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Z7K385A32R;
 				INFOPLIST_FILE = Todoey/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.bkbb.todoey-ios13.Todoey";
+				PRODUCT_BUNDLE_IDENTIFIER = com.bkbb.todoey;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -322,13 +339,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Z7K385A32R;
 				INFOPLIST_FILE = Todoey/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.bkbb.todoey-ios13.Todoey";
+				PRODUCT_BUNDLE_IDENTIFIER = com.bkbb.todoey;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -357,6 +375,39 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		150EB92A308D54DE00910D6D /* XCRemoteSwiftPackageReference "SwipeCellKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SwipeCellKit/SwipeCellKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.7.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		150EB92B308D54DE00910D6D /* SwipeCellKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 150EB92A308D54DE00910D6D /* XCRemoteSwiftPackageReference "SwipeCellKit" */;
+			productName = SwipeCellKit;
+		};
+/* End XCSwiftPackageProductDependency section */
+
+/* Begin XCVersionGroup section */
+		158B4422308B58D70057DE43 /* DataModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				158B4423308B58D70057DE43 /* DataModel.xcdatamodel */,
+			);
+			currentVersion = 158B4423308B58D70057DE43 /* DataModel.xcdatamodel */;
+			name = DataModel.xcdatamodeld;
+			path = ../Todoey/DataModel.xcdatamodeld;
+			sourceTree = SOURCE_ROOT;
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = EB2BE4EE239524DB00FB933B /* Project object */;
 }
